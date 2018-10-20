@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Serif', serif;
+}
+
+h1 {
+  background-color: black;
+  color:white;
+  margin: auto;
+  padding: 30px 0;
+  font-size: 2.5em;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.explanation-img {
+  display: block;
+  max-width: 75%;
+  max-height: 300px;
+  margin: 20px auto 0 auto;
+  border-radius: 15px;
+}
+
+button {
+  display: block;
+  margin: 20px auto 30px auto;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+  margin: 20px 20px 0 20px;
+  padding: none;
+}
+
+legend {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+.radio-group-wrap {
+  max-width: max-content; 
+  margin: 10px auto;
+}
+.radio-element-wrap {
+  max-width: 400px;
+  padding: 10px
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.correct-text {
+  color: green;
+  font-weight: bold;
+
+}
+.incorrect-text {
+  color: red;
+}
+
+.explanation {
+  font-color: grey;
+  padding: 20px 20px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+  main {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  legend, h2 {
+    font-size: 2em;
+  }
+
+  label, h3, p, button {
+    font-size: 1.5em;
+  }
+
+  .banner-img {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 15px;
+  }
+
+  button {
+    width: 300px;
+    height: 60px;
+  }
+
+  .radio-element-wrap {
+    max-width: 800px;
+    margin: auto;
+  }
+
+}
